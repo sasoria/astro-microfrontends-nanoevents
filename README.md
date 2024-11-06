@@ -11,11 +11,11 @@ The shell creates an emitter and waits for the Microfrontend to be loaded. Once 
 ```js
 const emitter = createNanoEvents();
 
-    emitter.on("loaded", loaded => {
-        if (loaded) {
-            emitter.emit("authenticated", true);
-        }
-    });
+emitter.on("loaded", loaded => {
+    if (loaded) {
+        emitter.emit("authenticated", true);
+    }
+});
 
     return <MicroFrontendA emitter={emitter} />
 ```
