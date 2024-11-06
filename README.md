@@ -17,7 +17,7 @@ emitter.on("loaded", loaded => {
     }
 });
 
-    return <MicroFrontendA emitter={emitter} />
+return <MicroFrontendA emitter={emitter} />
 ```
     
 ## Microfrontend
